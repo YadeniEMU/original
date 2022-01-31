@@ -166,7 +166,7 @@ public class Date {
 	}
 
 	public boolean monthOK(String month) {
-		switch(month) {
+		switch (month) {
 		case ("January"):
 			return true;
 		case "February":
@@ -194,7 +194,7 @@ public class Date {
 		default:
 			return false;
 		}
-		}
+	}
 
 	public String monthString(int monthNumber) {
 		switch (monthNumber) {
