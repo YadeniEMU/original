@@ -26,11 +26,11 @@ public class DateTest {
 	}
 	
 	@Test
-	public void testMonthString() {
+	public void testMonthName() {
 		Date fakeDate = new Date();
 		int num = 1;
 		String expected = "January";
-		assertEquals(fakeDate.monthString(num), expected);
+		assertEquals(fakeDate.monthName(num), expected);
 		
 	}
 	
