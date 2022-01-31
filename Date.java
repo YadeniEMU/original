@@ -38,7 +38,7 @@ public class Date {
 
 	public void setDate(int monthInt, int day, int year) {
 		if (dateOK(monthInt, day, year)) {
-			this.month = monthString(monthInt);
+			this.month = monthName(monthInt);
 			this.day = day;
 			this.year = year;
 		} else {
@@ -75,7 +75,7 @@ public class Date {
 			System.out.println("Fatal Error");
 			System.exit(0);
 		} else
-			month = monthString(monthNumber);
+			month = monthName(monthNumber);
 	}
 
 	public void setDay(int day) {
@@ -196,7 +196,7 @@ public class Date {
 		}
 	}
 
-	public String monthString(int monthNumber) {
+	public String monthName(int monthNumber) {
 		switch (monthNumber) {
 		case 1:
 			return "January";
